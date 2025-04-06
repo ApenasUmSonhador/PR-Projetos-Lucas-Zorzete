@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <script src="js/script.js"></script>
+    <script src="js/camp.js"></script>
+</head>
+<body style="background-image: url(img/background.jpg);">
+    <header id="menu">
+        <div class="slider">
+          <div class="slides">
+            <img src="img/Untitled image (2).png" alt="Imagem 1">
+            <img src="img/Untitled image (4).png" alt="Imagem 2">
+            <img src="img/Untitled image (6).png" alt="Imagem 3">
+          </div>
+          <div class="container">
+            <div class="logo">
+               <img src="img/WhatsApp_Image_2025-03-30_at_19.43.58_1309ea71-removebg-preview.png" alt="logo" width="130px" height="100px">
+              <h2>APARTBRAIN</h2>
+            </div>
+             
+            <div class="sidebox">
+
+            </div>
+            
+            <div class="space">
+              <div class="space-button">
+                  <button id="btn-home" class="animation">Home<i class="ri-arrow-right-line"></i></button>
+                  <button id="btn-feedback" onclick="mostrarFeed()" class="animation">Feedback<i class="ri-arrow-right-line"></i></button>
+              </div>
+              <div class="consultar">
+                  <button id="btn-consultar" onclick="mostrarConsult()" class="consult"><i class="ri-user-location-line"></i>Consulte aqui!</button>
+              </div>
+              
+
+              <div class="endereco">
+                <a href="https://www.google.com.br/maps/place/Av.+H%C3%A9lio+Pellegrino,+S%C3%A3o+Paulo+-+SP,+04513-100/@-23.5982287,-46.675348,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce57556d9ac09f:0x39c2324443ca1d1!8m2!3d-23.5982336!4d-46.6727731!16s%2Fg%2F1ymty0sx4?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">
+                  <i class="ri-map-pin-line"></i>
+                  Av.Hélio Pellegrino 876 - Vila Nova Conceição
+                </a>
+                <span>(endereço inexistente)</span> 
+              </div>
+            </div>
+            <div class="info-site">
+                <h1>ApartBrain – Seu lar, sua conquista</h1>
+                <p>
+                  Especializada em imóveis de alto padrão, a ApartBrain oferece uma experiência exclusiva, com tecnologia de ponta, atendimento personalizado e curadoria impecável. Descubra o novo conceito de viver bem, com conforto, elegância e segurança em cada detalhe.
+                </p>
+                <div class="space-search">
+                  <i class="ri-search-line"></i>
+                  <input type="search" name="search" id="input-search">
+                </div>
+                
+            </div>
+          </div>
+  
+        </div>
+    </header>
+
+        <main>
+            <div class="box-products">
+                <div class="title">
+                    <h2>CONFIRA NOSSOS PRODUTOS!</h2>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <a href="html/lock.html"><img src="img/20250320112653_1.webp" alt="fechadura" class="lock"></a>
+                        <div class="info">
+                            <h3>Espaço: 320m²</h3>
+                            <h4>Jardim Vista Alegre - SP</h4>
+                            <div class="prices">
+                              <span>R$900.000,00</span>
+                              <p>R$700.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="html/camera.html"><img src="img/ARQUITETURA-INDAIATUBA-DIANA-BROOKS.jpg" alt="camera" class="camera"></a>
+                        <div class="info">
+                            <h3>Espaço: 500m²</h3>
+                            <h4>Barra da Tijuca - RJ</h4>
+                            <div class="prices">
+                              <span>R$5.000.000,00</span>
+                              <p>R$3.000.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="html/video.html"><img src="img/28413c9f32b268ccaa5ea888f081de75.jpg" alt="videoporteiro" class="video"></a>
+                        <div class="info">
+                            <h3>Espaço: 480m²</h3>
+                            <h4>Jardim Europa - SP</h4>
+                            <div class="prices">
+                              <span>R$6.800.000,00</span>
+                              <p>R$4.800.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="html/router.html"><img src="img/bueno-brandao-257-condominio-30.webp" alt="roteador" class="router"></a>
+                        <div class="info">
+                            <h3>Espaço: 500m²</h3>
+                            <h4>Vila Nova Conceição - SP</h4>
+                            <div class="prices">
+                              <span>R$2.000.000,00</span>
+                              <p>R$900.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="box-email">
+                    <h2>
+                      <i class="ri-mail-line"></i>
+                      Enviar por e-mail
+                    </h2>
+                    <div class="form-email">
+                      <input type="text" id="name" placeholder="Nome">
+                      <input type="number" id="number" placeholder="Número">
+                      <input type="email" id="email" placeholder="E-mail">
+                      <textarea id="comments" rows="8"></textarea>
+                    </div>
+                    <div id="space" style="display: none; margin: 10px; font-size: 1.1em;"></div>
+                    <button id="sendEmail">Enviar <i class="ri-send-plane-fill"></i></button>
+                  </div>
+            </div>
+        </main>
+
+        <section id="feedback">
+          <div class="feedback-container">
+            <h1>Sua opinião é importante para nós</h1>
+            <form>
+                <label for="name">Qual seu nome?</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Ponha seu e-mail:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="comments">Deixe seu comentário:</label>
+                <textarea id="comments" name="comments" rows="8"></textarea>
+              </form>
+              
+              <button id="sendFeed">Enviar feedback <i class="ri-send-plane-fill"></i></button>
+          </div>
+          <div class="rating-section">
+              <span>Avalie sobre</span>
+              <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+              </div>
+              <input type="hidden" id="ratingValue" name="rating">
+          </div>
+        </section>
+
+        <section id="consultar">
+          <div class="form-container">
+            <h1>Venha se consultar para melhorar nosso atendimento</h1>
+            <form>
+                <label for="location">Onde?</label>
+                <input type="text" id="location" name="location" placeholder="Buscar localização">
+    
+                <label for="residents">Quem?</label>
+                <input type="text" id="residents" name="residents" placeholder="Moradores">
+    
+                <label for="property-type">Tipo</label>
+                <input type="text" id="property-type" name="property-type" placeholder="Casa, Apt...">
+    
+                <label for="garage">Garagem</label>
+                <select id="garage" name="garage">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+    
+                <label for="neighborhood">Bairro?</label>
+                <input type="text" id="neighborhood" name="neighborhood" placeholder="É necessário?">
+    
+                <label for="bedrooms">Dormitórios</label>
+                <input type="number" id="bedrooms" name="bedrooms" placeholder="Quantos quartos?">
+    
+                <label for="max-value">Valor máximo</label>
+                <input type="number" id="max-value" name="max-value" placeholder="$$$$$">
+    
+                <label for="min-value">Valor mínimo</label>
+                <input type="number" id="min-value" name="min-value" placeholder="$$$$$">
+    
+                <label for="specificity">Há alguma especificidade necessária?</label>
+                <textarea id="specificity" name="specificity" rows="5" placeholder="Conte-nos mais sobre seus desejos e detalhes para melhorar nossa pesquisa!"></textarea>
+    
+                <button type="submit">Enviar formulário <i class="ri-send-plane-fill"></i></button>
+            </form>
+        </section>
+
+        <div class="btn-up">
+          <button onclick="subir()"><i class="ri-arrow-up-s-line"></i></button>
+        </div>
+
+        <div id="sideBox" class="side-box">
+          <p>Aproveite os descontos, enquanto há tempo!</p>
+          <div id="countdown"></div>
+          <button onclick="closeBox()">Fechar</button>
+        </div>
+
+        <footer>
+            <div class="box-footer">
+              <div class="space-footer">
+                <p>PARCEIRO CREDENCIADO</p>
+                <a href="https://www.luxuryproperties.com.br/">
+                  <img src="img/logo-topo.png" alt="parceiro" width="150px" style="margin-bottom: 20px;">
+                </a>
+              </div>
+              
+              <div class="linha"></div>
+
+              <div class="space-footer">
+                <p>VEJA MAIS DO NOSSO TRABALHO</p>
+                <button class="insta">
+                  <a href="https://www.instagram.com/">
+                    Instagram
+                    <i class="ri-instagram-line"></i>
+                  </a>
+                </button>
+              </div>
+
+              <div class="linha"></div>
+
+              <div class="space-footer">
+                <p>ENTRE EM CONTATO CONOSCO</p>
+                <button class="whats">
+                  <a href="https://web.whatsapp.com/">
+                    <i class="ri-whatsapp-line"></i>
+                    (11) 98439-3259
+                  </a>
+                </button>
+              </div>
+            </div>
+        </footer>
+        <div class="footer-extra">
+          <div class="direitos">
+            <img src="img/WhatsApp_Image_2025-03-30_at_19.43.58_1309ea71-removebg-preview.png" width="60px">
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="eu">
+            <p>Desenvolvido por <span style="cursor: pointer;"><a href="https://www.instagram.com/luc4s_.r3is/">Lucas Zorzete</a></span></p>
+          </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@media (max-width: 1217px) {
+    #menu .container {
+        font-size: .6em;
+    }
+}
+
+@media (max-width: 1073px) {
+    #menu .space {
+        display: none;
+    }
+}
