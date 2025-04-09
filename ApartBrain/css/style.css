@@ -59,6 +59,38 @@ body {
     font-weight: 900;
 }
 
+.logo img {
+    width:130px;
+    height:100px;
+}
+
+#menu .ri-menu-line {
+    font-size: 3.8em; 
+    display: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.close-btn {
+    margin: 20px;
+}
+
+.ri-close-large-line {
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.8 );
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100%; width: 13em;
+    position: fixed;
+    display: none;
+}
+
 #menu .space {
     display: flex;
     align-items: center;
@@ -118,6 +150,10 @@ button:hover .ri-arrow-right-line {
 .consult .ri-user-location-line {
     margin-right: 10px;
     font-size: 1.2em;
+}
+
+#loc2 {
+    display: none;
 }
 
 #menu .endereco {
@@ -222,8 +258,19 @@ main {
 .products {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     margin-top: 40px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    gap: 10px;
+}
+
+.box2 {
+    display: flex;
+    gap: 10px;
 }
 
 .products .product {
@@ -323,11 +370,11 @@ main {
     background-color: transparent;
     color: #e2e2e2;
     border: 1px solid #e2e2e2;
-    padding: 12px;
-    width: 130px;
+    padding: 10px;
+    width: 120px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 10px;
     margin-bottom: 15px;
     gap: 35px;
@@ -369,6 +416,27 @@ main {
     font-size: 2.3em;
     text-align: center;
     width: 100%;
+}
+
+.feedback-container button {
+    background-color: transparent;
+    color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    gap: 35px;
+    margin: 0 auto;
+}
+
+.feedback-container button:hover {
+    background-color: #6dccf8;
+    color: #000000;
+    border: 1px solid #6dccf8;
 }
 
 .form-container form p {
@@ -441,6 +509,26 @@ main {
 .form-consult {
     display: flex;
     flex-direction: column;
+}
+
+.form {
+    background-color: transparent;
+    color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    gap: 35px;
+}
+
+.form:hover {
+    background-color: #6dccf8;
+    color: #000000;
+    border: 1px solid #6dccf8;
 }
 
 .note {

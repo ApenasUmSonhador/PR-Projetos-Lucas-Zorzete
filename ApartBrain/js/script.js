@@ -1,8 +1,18 @@
 // OBS: PEGUEI SUGESTÕES DE PARTES DO CÓDIGO COM IA
 
+function closeSidebar() {
+  const sidebar = document.getElementById('sideBar');
+  sidebar.style.display = "none";
+}
+
+function openSidebar() {
+  const sideBar = document.getElementById('sideBar');
+  sideBar.style.display = "block";
+}
+
 function mostrarConsult() {
     const consultar = document.getElementById('consultar');
-    if (consultar.style.display === "none") {
+    if (consultar.style.display === "none" || consultar.style.display === ''){
         consultar.style.display = "block";
         consultar.scrollIntoView({behavior: 'smooth'});
     } else {
@@ -12,7 +22,7 @@ function mostrarConsult() {
 
 function mostrarFeed() {
     const feedback = document.getElementById('feedback');
-    if (feedback.style.display === 'none') {
+    if (feedback.style.display === 'none' || feedback.style.display === '') {
         feedback.style.display = 'flex';
         feedback.scrollIntoView({ behavior: "smooth" });    /* SCROLAR A TELA ATÉ A ROTINA */
     } else {
@@ -93,4 +103,4 @@ document.addEventListener("DOMContentLoaded", function() {
   
     updateCountdown();
     setInterval(updateCountdown, 1000); // Atualiza a cada segundo
-  });
+});
