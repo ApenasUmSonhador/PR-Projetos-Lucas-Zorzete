@@ -1,4 +1,23 @@
 @media (max-width: 700px) {
+    .all {
+        max-width: 100%;
+    }
+    .fundo-site {
+        height: 100%;
+    }
+    .fundo {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    .carousel-container img {
+        height: 400px;
+    }
+    .carousel-slide img {
+        box-shadow: 0 10px 20px rgb(56, 56, 56);
+    }
+    #feedback {
+        padding-top: 2em;
+        padding-bottom: 1.3em;
+    }
     #menu .ri-menu-line {
         display: block;
         width: 100%;
@@ -38,7 +57,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         h4 {
             color: aliceblue;
             text-align: center;
@@ -56,32 +74,39 @@
         }
     }
     #menu .info-site {
+        margin-top: 20em;
         h1 {
+            font-size: 2.3em;
             width: 300px;
             text-align: center;
-            margin-left: none;
+            
             span {
                 display: none;
             }
         }
         p {
+            margin-top: 60px;
             font-size: 1.2em;
             width: 300px;
         }
         .space-search {
-            margin-left: 40px;
-            gap: 12px;
-            input {
-                margin-left: 20px;
-            }
+            width: 400px;   
+
             .ri-search-line {
                 display: none;
+            }
+            input {
+                padding: 20px;
+            }
+            input::placeholder {
+                font-size: 1.3em;
             }
         }
     }
     .products {
         gap: 10px;
         flex-direction: column;
+        place-items: center;
 
         .product img {
             filter: none;
@@ -97,20 +122,13 @@
     .box2 {
         gap: 10px;
     }
-    main .box-email {
-        width: 350px;
-        h2 {
-            font-size: 1.3em;
-            margin-top: 30px;
-        }
-        input {
-            width: 80%;
-            margin-left: 5px;
-        }
+    #menu .consultar {
+        margin-bottom: 50px;
     }
     .form-container {
         font-size: 1em;
         padding: 20px 0 20px 0;
+        margin-bottom: 30px;
     }
     .footer-extra {
         gap: 30px;
@@ -123,15 +141,17 @@
         left: 0;
         font-size: 1.5em;
     }
+    .btn-up {
+        padding: .7rem;
+        button {
+            font-size: 2.5em;
+        }
+    }
 }
 
 @media (max-width: 735px) {
     #consultar .form-container {
         width: 400px;
-
-        h1{
-            font-size: 1.2em;
-        }
     }
 }
 
@@ -143,11 +163,7 @@
         h1 {
            text-align: center;
         }
-        p {
-            margin-left: 30px;
-        }
         .space-search {
-            margin-left: 40px;
             input {
                 width: 700px;
             }
@@ -285,6 +301,14 @@
             padding: 7px;
         }
     }
+    .container .info-site {
+        p {
+            width: 500px;
+        }
+        h1 {
+            width: 500px;
+        }
+    }
     footer {
         height: auto;
         
@@ -304,21 +328,28 @@
     #menu .info-site {
         font-size: 1.6em;
         margin-top: 40px;
-        h1 {
-            width: 700px;
-        }
         p {
             font-size: 1.2em;
         }
         .space-search {
-            margin-left: 40px;
             gap: 12px;
             input {
-                width: 350px;
+                width: 340px;
             }
             .ri-search-line {
                 font-size: 1.3em;
             }
+        }
+    }
+    main .box-email {
+        width: 350px;
+        h2 {
+            font-size: 1.3em;
+            margin-top: 30px;
+        }
+        input {
+            width: 80%;
+            margin-left: 5px;
         }
     }
 }

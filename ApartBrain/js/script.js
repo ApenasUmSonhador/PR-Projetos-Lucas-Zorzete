@@ -1,5 +1,10 @@
 // OBS: PEGUEI SUGESTÕES DE PARTES DO CÓDIGO COM IA
 
+function irHome() {
+  const home = document.getElementById('home');
+  home.scrollIntoView({behavior: 'smooth'});
+}
+
 function closeSidebar() {
   const sidebar = document.getElementById('sideBar');
   sidebar.style.display = "none";

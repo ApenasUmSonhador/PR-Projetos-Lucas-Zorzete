@@ -14,6 +14,12 @@
     --whats: rgb(82, 255, 47);
 
     --back: #0a2329;
+
+    --shadow: 20px 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.all {
+    width: 100%;
 }
 
 * {
@@ -23,12 +29,19 @@
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-#menu .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%; height: 700px;
+.fundo-site {
+    position: fixed; 
+    z-index: -1;
+    width: 100%;
+}
+
+.fundo {
+    background-color: transparent;
+    height: 50em;
 }
 
 #menu .container {
@@ -40,7 +53,7 @@ body {
     top: 3%;
     color: #fff;
     font-family: var(--julius);
-    font-size: .7em;
+    font-size: .6em;
 }
 
 .container .space-button {
@@ -158,7 +171,7 @@ button:hover .ri-arrow-right-line {
 
 #menu .endereco {
     margin-left: 7em;
-    font-size: 1.3em;
+    font-size: 1.29em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -195,33 +208,34 @@ button:hover .ri-arrow-right-line {
     display: flex;  
     flex-direction: column;
     align-items: center;
-    width: 900px;
+    width: 900px; height: 20em;
     margin: 0 auto;
     margin-top: 30px;
     font-size: 1.8em;
 }
 
 .info-site h1 {
+    text-align: center;
     width: 800px;
 }
 
 .info-site p {
     font-family: var(--quick);
-    margin-left: 20px;
+    margin-left: 10px;
     width: 700px;
 }
 
 #menu .space-search {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     margin-top: 40px;
+    justify-content: center;
 }
 
 input[type="search"] {
-    width: 750px;
+    width: 700px;
     padding: 14px;
-    margin-right: 60px;
 }
 
 .ri-search-line {
@@ -239,6 +253,7 @@ input[type="search"] {
 }
 
 main {
+    box-shadow: 0 0 20px rgb(37, 37, 37);
     width: 100%;
     height: auto;
     background-color: #0a2329;
@@ -251,7 +266,7 @@ main {
 
 .box-products .title {
     font-family: var(--julius);
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 70px;
 }
 
@@ -295,10 +310,6 @@ main {
 .product img:hover {
     transform: scale(1.05);
     filter: grayscale(0%);
-}
-
-.products:active {
-    transform: scale(0.95) rotateZ(1.7deg);
 }
 
 .product .info {
@@ -388,11 +399,14 @@ main {
 
 #feedback {
     display: none;
-    margin-top: 150px;
+    margin-top: 140px;
     width: 100%;
-    height: 800px;
+    height: auto;
+    padding-top: 4em;
+    padding-bottom: 4em;
     background-color: var(--back);
     align-items: center;
+    box-shadow: 0 0 20px rgb(37, 37, 37);
 }
 
 .feedback-container {
@@ -400,9 +414,9 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 900px; height: auto;
+    width: 830px; height: auto;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     font-family: var(--quick);
@@ -445,8 +459,9 @@ main {
 }
 
 #feedback .rating-section {
-    width: 220px; height: 450px;
-    font-size: 1.7em;
+    width: 220px; height: auto;
+    padding-bottom: 40px;
+    font-size: 1.5em;
     font-family: var(--popp);
     text-align: center;
     background-color: rgb(41, 41, 41);
@@ -490,11 +505,11 @@ main {
 }
 
 .form-container {
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: var(--back);
     padding: 20px;
     border-radius: 10px;
-    width: 800px;
+    width: 750px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     color: #fff;
     margin: 0 auto;
@@ -504,6 +519,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
     font-family: var(--julius);
+    font-size: 1.6em;
 }
 
 .form-consult {
@@ -559,8 +575,8 @@ main {
 
 footer {
     background-color: rgb(0, 59, 75);
-    box-shadow: 30px -10px 79px rgba(0, 0, 0, 0.22);
-    width: 100%; height: 240px;
+    box-shadow: 0 -10px 20px rgb(150, 150, 150);
+    width: 100%; height: 200px;
     margin-top: 8%;
     color: var(--color-three);
 }
@@ -581,9 +597,9 @@ footer {
 
 .space-footer {
     font-family: var(--julius);
-    margin-top: 30px;
+    margin-top: 20px;
     text-shadow: 1px 1px 15px var(--color-three);
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -658,7 +674,7 @@ footer {
     font-family: var(--quick);
     background-color: #0a2329;
     color: var(--color-three);
-    height: 60px;
+    height: 54px;
 }
 
 .direitos {
@@ -681,5 +697,5 @@ footer {
 }
 
 .eu span:hover a {
-    text-shadow: 1px 1px 20px #b1b1b1;
+    text-shadow: 1px 1px 20px #bbbbbb;
 }
