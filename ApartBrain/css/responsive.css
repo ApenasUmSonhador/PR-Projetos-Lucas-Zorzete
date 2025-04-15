@@ -1,6 +1,6 @@
 @media (max-width: 700px) {
-    .all {
-        max-width: 100%;
+    #menu .info-site {
+        width: 300px;
     }
     .fundo-site {
         height: 100%;
@@ -20,9 +20,7 @@
     }
     #menu .ri-menu-line {
         display: block;
-        width: 100%;
         text-align: center;
-        margin-right: 15px;
     }
     #menu .space {
         display: none;

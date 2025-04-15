@@ -18,10 +18,6 @@
     --shadow: 20px 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.all {
-    width: 100%;
-}
-
 * {
     transition: .2s linear;
 }
@@ -53,7 +49,7 @@ body {
     top: 3%;
     color: #fff;
     font-family: var(--julius);
-    font-size: .6em;
+    font-size: .65em;
 }
 
 .container .space-button {
@@ -203,7 +199,7 @@ button:hover .ri-arrow-right-line {
     z-index: 2;
     font-family: var(--julius);
     border: none;
-    max-width: 600px;
+    width: 600px;
     color: #fff;
     display: flex;  
     flex-direction: column;
@@ -222,7 +218,7 @@ button:hover .ri-arrow-right-line {
 .info-site p {
     font-family: var(--quick);
     margin-left: 10px;
-    width: 700px;
+    width: 660px;
 }
 
 #menu .space-search {
@@ -231,6 +227,7 @@ button:hover .ri-arrow-right-line {
     gap: 10px;
     margin-top: 40px;
     justify-content: center;
+    margin-right: 20px;
 }
 
 input[type="search"] {
@@ -239,7 +236,7 @@ input[type="search"] {
 }
 
 .ri-search-line {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .space-image .info-site h1 {
