@@ -25,9 +25,6 @@
     #menu .space {
         display: none;
     }
-    .sidebar {
-        display: block;
-    }
     .sidebar-btn {
         display: flex;
         flex-direction: column;
