@@ -296,6 +296,13 @@
             padding: 7px;
         }
     }
+    .product img {
+        filter: none;
+    }
+    .product .info {
+        opacity: 1;
+        width: 100%;
+    }
     .container .info-site {
         p {
             width: 500px;
