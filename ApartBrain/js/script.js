@@ -1,8 +1,5 @@
 // OBS: PEGUEI SUGESTÕES DE PARTES DO CÓDIGO COM IA
 
-ScrollRevea
-
-
 function irHome() {
   const home = document.getElementById('home');
   home.scrollIntoView({behavior: 'smooth'});
