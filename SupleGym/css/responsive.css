@@ -131,6 +131,21 @@
     }
 }
 
+@media (max-width: 436px) {
+    .box-info-footer {
+        margin: 0 30px 0 30px;
+    }
+    .footer-info .info-logo {
+        width: 100%;
+        #logoDraw {
+            width: 80px;
+        }
+        #logoWord {
+            width: 180px;
+        }
+    }
+}
+
 @media (max-width: 440px) {
     .side-bar {
         width: 80%;
