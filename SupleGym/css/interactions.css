@@ -95,7 +95,11 @@ body.inverted {
     color: #000;
   }
 
-
+  body.inverted footer .footer-extra p,
+  body.inverted footer .footer-extra a
+   {
+    color: #000;
+  }
 
   body.saturated {
     --primary-color: #ff00ff;                 /* Magenta neon */
@@ -160,6 +164,11 @@ body.inverted {
   body.saturated footer .footer-info {
     background-color: #660066;
     color: #fff;
+  }
+  body.saturated footer .footer-extra p,
+  body.saturated footer .footer-extra a
+   {
+    color: #000;
   }
   
 .font-size,
@@ -325,4 +334,10 @@ body.high-contrast textarea {
 body.high-contrast ::placeholder {
   color: #000;
   opacity: 1;
+}
+
+body.high-contrast footer .footer-extra p,
+body.high-contrast footer .footer-extra a
+  {
+  color: #000;
 }

@@ -515,7 +515,7 @@ main {
 
 footer {
     width: 100%;
-    padding-bottom: 30px;
+    
     background-color: var(--primary-color);
 }
 
@@ -591,5 +591,22 @@ footer {
         img {
             margin: 20px 20px 0 0;
         }
+    }
+}
+
+.footer-extra {
+    width: 100%;
+    font-family: var(--mulish);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    line-height: .5px;
+    margin-top: 25px;
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #000000;
     }
 }
