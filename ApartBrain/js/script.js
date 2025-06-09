@@ -65,17 +65,19 @@ document.getElementById("ratingForm").addEventListener("submit", function(event)
 });
 });
 
+let alreadyShown = false; // Variável para controlar se a caixa já foi mostrada
 window.addEventListener("scroll", function() {
     let scrollPosition = window.innerHeight + window.scrollY;
     let documentHeight = document.body.offsetHeight;
   
-    if (scrollPosition >= documentHeight) {
+    if (scrollPosition >= documentHeight && !alreadyShown) {
       document.getElementById("sideBox").style.display = "block";
     }
   });
   
   function closeBox() {
     document.getElementById("sideBox").style.display = "none";
+    alreadyShown = true; // Marcar que a caixa já foi mostrada
 }
 
 function subir() {
