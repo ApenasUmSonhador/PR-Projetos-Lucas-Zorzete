@@ -662,7 +662,8 @@ footer {
 .footer-extra {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
     font-family: var(--quick);
     background-color: #0a2329;
     color: var(--color-three);
