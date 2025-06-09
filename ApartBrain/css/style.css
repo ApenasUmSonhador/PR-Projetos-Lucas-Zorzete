@@ -79,10 +79,6 @@ body {
     cursor: pointer;
 }
 
-.close-btn {
-    margin: 20px;
-}
-
 .ri-close-large-line {
     color: white;
     font-size: 1.8em;
